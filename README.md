@@ -44,4 +44,4 @@ This project is licensed under the [MIT License](LICENSE).
 
 ## ***Insignia por concluir el challenge***
 
-![image] (/resources/Insignia)
+![image](https://github.com/kjarj54/Encriptador/blob/main/resources/Insignia.png)
