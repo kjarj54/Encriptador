@@ -9,11 +9,6 @@
     <link rel='stylesheet' type='text/css' media='screen' href='styles.css'>
     <link rel="icon" type="image/svg" href="resources/logo-edited.svg" width="50" height="50">
 
-
-    <!-- bootstrap 5.3.2 -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-
     <!-- Enlace al conjunto de iconos Bootstrap desde CDN -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
 
@@ -29,17 +24,41 @@
 
 <body>
     <header>
-        <img src="resources/Logo.svg" alt="">
+        <img src="resources/Logo.svg" alt="logo">
     </header>
 
     <main>
-        <i class="bi bi-info-circle"></i>
-        <section>
+
+        <section class="inputSection">
+            <div class="inputContainer">
+                <textarea class="textInput" id="textInput" placeholder="Ingrese el texto aqui"></textarea>
+            </div>
+
+            <div class="containerIcon">
+                <div class="warning">
+                    <i class="bi bi-info-circle"></i>
+                    <label>Usar letras minusculas y no usar acentos</label>
+                </div>
+
+                <div class="buttonContainer">
+                    <button class="btn btn-primary" id="btnEncriptar">Encriptar</button>
+                    <button class="btn btn-secondary" id="btnDesencriptar">Desencriptar</button>
+                </div>
+            </div>
+
 
         </section>
 
-        <section>
-
+        <section class="outputSection">
+            <div class="outputContainer" id="outputContainer">
+                <div class="image" id="image">
+                    <img class="muneco" src="resources/muneco.svg" alt="muneco">
+                    <h2>Ningun mensaje fue encontrado</h2>
+                    <p>Ingrese el texto que desees encriptar o desencriptar</p>
+                </div>
+                <textarea class="textOutput" id="textOutput" ></textarea>
+                <button class="btn btnCopy" id="buttonCopy">Copiar</button>
+            </div>
         </section>
     </main>
 
@@ -56,9 +75,8 @@
                 <i class="devicon-linkedin-plain"></i></a>
         </div>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-        crossorigin="anonymous"></script>
+    
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <script src='scritp.js'></script>
 </body>
 
