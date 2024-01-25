@@ -41,3 +41,7 @@ The application works only with lowercase letters and does not support accents o
 ## License
 
 This project is licensed under the [MIT License](LICENSE).
+
+## ***Insignia por concluir el challenge***
+
+![image] (/resources/Insignia)
